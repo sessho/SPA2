@@ -1,0 +1,11 @@
+<div class="container animated fadeIn mt-5">
+  <div class="media">
+    <img [src]="character.img" alt="img personaje" class="mr-3">
+    <div class="media-body">
+      <h5 class="mt-0">{{ character.nombre }}</h5>
+      <p>{{ character.bio }}</p>
+      <p><small>{{ character.apodo }}</small></p>
+      <a [routerLink]="[ '/characters' ]" class="btn btn-outline-danger">Regresar</a>
+    </div>
+  </div>
+</div>

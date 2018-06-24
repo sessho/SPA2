@@ -1,0 +1,14 @@
+<div class="container mt-5 animated fadeIn">
+    <div class="card-columns">
+      <div class="card" *ngFor="let c of characters; let i=index">
+        <img class="card-img-top" [src]="c.img" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{ c.nombre }}</h5>
+          <p class="card-text">{{ c.bio }}</p>
+          <p class="card-text"><small class="text-muted">{{ c.apodo }}</small></p>
+          <!-- <a class="btn btn-outline-primary btn-block" [routerLink]="[ '/character' ]">Ver más...</a> -->
+          <button class="btn btn-outline-primary btn-block" (click)="character(c.nombre)">Ver más...</button>
+        </div>
+      </div>
+    </div>
+  </div>
